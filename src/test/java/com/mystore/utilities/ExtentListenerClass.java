@@ -19,7 +19,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentListenerClass implements ITestListener{
 
-	ExtentSparkReporter  htmlReporter;
+	ExtentSparkReporter htmlReporter;
 	ExtentReports reports;
 	ExtentTest test;
 	

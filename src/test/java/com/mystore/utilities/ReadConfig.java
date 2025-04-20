@@ -10,7 +10,8 @@ public class ReadConfig {
 
 	Properties properties;
 
-	String path = "C:\\Users\\prach\\Desktop\\CS_AutomationFramework\\MyStoreV1\\Configuration\\config.properties";
+	String projectDir = System.getProperty("user.dir");
+	String path = projectDir + "\\Configuration\\config.properties";
 
 	//constructor
 	public ReadConfig() {

@@ -16,6 +16,7 @@ import com.mystore.pageobject.SearchResultPage;
 import com.mystore.pageobject.indexPage;
 import com.mystore.pageobject.myAccountPage;
 import com.mystore.pageobject.registeredUserAccount;
+import com.mystore.utilities.TakeScreenShot;
 
 
 
@@ -35,7 +36,7 @@ public class TC_ProductPageTest  extends BaseClass  {
 		//Enter account details- email and password
 		myAccountPage pg = new myAccountPage(driver);
 		pg.enterEmailAddress(emailAddress);
-
+		TakeScreenShot.capture(driver);
 		logger.info("User Email and Password entered.");
 		pg.enterPassword(password);
 

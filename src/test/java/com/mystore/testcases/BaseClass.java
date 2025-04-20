@@ -1,22 +1,21 @@
 package com.mystore.testcases;
 
-import java.io.File;
-import java.io.IOException;
-import java.time.Duration;
-
-import org.apache.logging.log4j.Logger;
-import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import com.mystore.utilities.ReadConfig;
+import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
+import org.apache.logging.log4j.Logger;
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.*;
-
-import com.mystore.utilities.ReadConfig;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
@@ -46,12 +45,12 @@ public class BaseClass {
 
 		case "msedge":
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			driver =  new EdgeDriver();
 			break;
 
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver =  new FirefoxDriver();
 			break;
 		default:
 			driver = null;
@@ -95,6 +94,7 @@ public class BaseClass {
 	
 		//step3: copy image file to destination
 		FileUtils.copyFile(src, dest);
+
 	}
 	
 
