@@ -7,13 +7,13 @@
   <test thread-count="3" parallel="tests" name="firefoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.mystore.testcases.test">
+      <class name="com.mystore.testcases.TestCasePractice">
         <methods>
           <include name="beforeTest"/>
           <include name="terminate"/>
           <include name="tests"/>
         </methods>
-      </class> <!-- com.mystore.testcases.test -->
+      </class> <!-- com.mystore.testcases.TestCasePractice -->
     </classes>
   </test> <!-- firefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

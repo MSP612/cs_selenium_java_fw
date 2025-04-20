@@ -46,7 +46,7 @@ public class ExtentListenerClass implements ITestListener{
 		
 	}
 
-	//OnStart method is called when any Test starts.
+	//OnStart method is called when any TestCasePractice starts.
 	public void onStart(ITestContext Result)					
 	{		
 		configureReport();
@@ -63,13 +63,13 @@ public class ExtentListenerClass implements ITestListener{
 
 
 
-	// When Test case get failed, this method is called.		
+	// When TestCasePractice case get failed, this method is called.		
 
 	public void onTestFailure(ITestResult Result) 					
 	{		
-		System.out.println("Name of test method failed:" + Result.getName() );  		
+		System.out.println("Name of TestCasePractice method failed:" + Result.getName() );  		
 		test = reports.createTest(Result.getName());//create entry in html report
-		test.log(Status.FAIL, MarkupHelper.createLabel("Name of the failed test case is: " + Result.getName() ,ExtentColor.RED));
+		test.log(Status.FAIL, MarkupHelper.createLabel("Name of the failed TestCasePractice case is: " + Result.getName() ,ExtentColor.RED));
 	
 	String screenShotPath = System.getProperty("user.dir") + "\\ScreenShots\\" + Result.getName() + ".png";
 	
@@ -81,36 +81,36 @@ public class ExtentListenerClass implements ITestListener{
 		
 	}
 	
-	//	test.addScreenCaptureFromPath(null)
+	//	TestCasePractice.addScreenCaptureFromPath(null)
 		
 	}		
 
-	// When Test case get Skipped, this method is called.		
+	// When TestCasePractice case get Skipped, this method is called.		
 
 	public void onTestSkipped(ITestResult Result)					
 	{		
-		System.out.println("Name of test method skipped:" + Result.getName() );  		
+		System.out.println("Name of TestCasePractice method skipped:" + Result.getName() );  		
 
 		test = reports.createTest(Result.getName());
-		test.log(Status.SKIP, MarkupHelper.createLabel("Name of the skip test case is: " + Result.getName() ,ExtentColor.YELLOW));
+		test.log(Status.SKIP, MarkupHelper.createLabel("Name of the skip TestCasePractice case is: " + Result.getName() ,ExtentColor.YELLOW));
 	}			
 
-	// When Test case get Started, this method is called.		
+	// When TestCasePractice case get Started, this method is called.		
 
 	public void onTestStart(ITestResult Result)					
 	{		
-		System.out.println("Name of test method started:" + Result.getName() );  		
+		System.out.println("Name of TestCasePractice method started:" + Result.getName() );  		
 
 	}		
 
-	// When Test case get passed, this method is called.		
+	// When TestCasePractice case get passed, this method is called.		
 
 	public void onTestSuccess(ITestResult Result)					
 	{		
-		System.out.println("Name of test method sucessfully executed:" + Result.getName() );  		
+		System.out.println("Name of TestCasePractice method sucessfully executed:" + Result.getName() );  		
 
 		test = reports.createTest(Result.getName());
-		test.log(Status.PASS, MarkupHelper.createLabel("Name of the passed test case is: " + Result.getName() ,ExtentColor.GREEN));
+		test.log(Status.PASS, MarkupHelper.createLabel("Name of the passed TestCasePractice case is: " + Result.getName() ,ExtentColor.GREEN));
 	}		
 
 

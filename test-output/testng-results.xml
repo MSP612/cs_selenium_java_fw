@@ -6,8 +6,8 @@
     <groups>
     </groups>
     <test started-at="2025-04-20T19:25:19 IST" name="firefoxTest" finished-at="2025-04-20T19:25:44 IST" duration-ms="24546">
-      <class name="com.mystore.testcases.test">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.mystore.testcases.test@548e6d58]" started-at="2025-04-20T19:25:20 IST" name="beforeTest" finished-at="2025-04-20T19:25:27 IST" duration-ms="6846" status="PASS">
+      <class name="com.mystore.testcases.TestCasePractice">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.mystore.testcases.TestCasePractice@548e6d58]" started-at="2025-04-20T19:25:20 IST" name="beforeTest" finished-at="2025-04-20T19:25:27 IST" duration-ms="6846" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="tests()[pri:0, instance:com.mystore.testcases.test@548e6d58]" started-at="2025-04-20T19:25:27 IST" name="tests" finished-at="2025-04-20T19:25:43 IST" duration-ms="16379" status="FAIL">
+        <test-method signature="tests()[pri:0, instance:com.mystore.testcases.TestCasePractice@548e6d58]" started-at="2025-04-20T19:25:27 IST" name="tests" finished-at="2025-04-20T19:25:43 IST" duration-ms="16379" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@class='desktop-main'][text()='Women']/following-sibling::*//a[@class='desktop-categoryLink'][text()='Jeans'] (tried for 0 second(s) with 5000 milliseconds interval)
@@ -33,7 +33,7 @@ System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.mystore.testcases.test.tests(test.java:82)
+at com.mystore.testcases.TestCasePractice.tests(test.java:82)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -62,15 +62,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tests -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.mystore.testcases.test@548e6d58]" started-at="2025-04-20T19:25:43 IST" name="terminate" finished-at="2025-04-20T19:25:44 IST" duration-ms="894" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.mystore.testcases.TestCasePractice@548e6d58]" started-at="2025-04-20T19:25:43 IST" name="terminate" finished-at="2025-04-20T19:25:44 IST" duration-ms="894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- com.mystore.testcases.test -->
+      </class> <!-- com.mystore.testcases.TestCasePractice -->
     </test> <!-- firefoxTest -->
     <test started-at="2025-04-20T19:25:19 IST" name="ChromeTest" finished-at="2025-04-20T19:25:50 IST" duration-ms="30243">
-      <class name="com.mystore.testcases.test">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.mystore.testcases.test@58a9760d]" started-at="2025-04-20T19:25:20 IST" name="beforeTest" finished-at="2025-04-20T19:25:37 IST" duration-ms="17510" status="PASS">
+      <class name="com.mystore.testcases.TestCasePractice">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.mystore.testcases.TestCasePractice@58a9760d]" started-at="2025-04-20T19:25:20 IST" name="beforeTest" finished-at="2025-04-20T19:25:37 IST" duration-ms="17510" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,15 +81,15 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="tests()[pri:0, instance:com.mystore.testcases.test@58a9760d]" started-at="2025-04-20T19:25:37 IST" name="tests" finished-at="2025-04-20T19:25:49 IST" duration-ms="12053" status="PASS">
+        <test-method signature="tests()[pri:0, instance:com.mystore.testcases.TestCasePractice@58a9760d]" started-at="2025-04-20T19:25:37 IST" name="tests" finished-at="2025-04-20T19:25:49 IST" duration-ms="12053" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tests -->
-        <test-method is-config="true" signature="terminate()[pri:0, instance:com.mystore.testcases.test@58a9760d]" started-at="2025-04-20T19:25:49 IST" name="terminate" finished-at="2025-04-20T19:25:50 IST" duration-ms="298" status="PASS">
+        <test-method is-config="true" signature="terminate()[pri:0, instance:com.mystore.testcases.TestCasePractice@58a9760d]" started-at="2025-04-20T19:25:49 IST" name="terminate" finished-at="2025-04-20T19:25:50 IST" duration-ms="298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminate -->
-      </class> <!-- com.mystore.testcases.test -->
+      </class> <!-- com.mystore.testcases.TestCasePractice -->
     </test> <!-- ChromeTest -->
   </suite> <!-- Suite -->
 </testng-results>

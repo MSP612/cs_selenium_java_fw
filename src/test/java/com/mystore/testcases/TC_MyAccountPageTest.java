@@ -18,7 +18,7 @@ public class TC_MyAccountPageTest extends BaseClass {
 	public void verifyRegistrationAndLogin()
 	{
 
-		logger.info("***************TestCase Verify Registration and Login starts*****************"); 
+		logger.info("***************TestCasePractice Verify Registration and Login starts*****************"); 
 
 
 		indexPage pg = new indexPage(driver);
@@ -62,7 +62,7 @@ public class TC_MyAccountPageTest extends BaseClass {
 
 		Assert.assertEquals("Prachi Gupta", userName);
 
-		logger.info("***************TestCase Verify Registration and Login ends*****************"); 
+		logger.info("***************TestCasePractice Verify Registration and Login ends*****************"); 
 
 	}
 
@@ -70,7 +70,7 @@ public class TC_MyAccountPageTest extends BaseClass {
 	public void VerifyLogin() throws IOException 
 	{
 
-		logger.info("***************TestCase Verify Login starts*****************"); 
+		logger.info("***************TestCasePractice Verify Login starts*****************"); 
 
 		indexPage pg = new indexPage(driver);
 
@@ -107,7 +107,7 @@ public class TC_MyAccountPageTest extends BaseClass {
 
 		}
 
-		logger.info("***************TestCase Verify Login ends*****************"); 
+		logger.info("***************TestCasePractice Verify Login ends*****************"); 
 
 
 	}
@@ -117,7 +117,7 @@ public class TC_MyAccountPageTest extends BaseClass {
 	public void VerifySignOut() throws IOException 
 	{
 
-		logger.info("***************TestCase Verify Sign out starts*****************"); 
+		logger.info("***************TestCasePractice Verify Sign out starts*****************"); 
 
 		indexPage pg = new indexPage(driver);
 
@@ -153,7 +153,7 @@ public class TC_MyAccountPageTest extends BaseClass {
 		}
 
 	
-		logger.info("***************TestCase Verify Sign out ends*****************"); 
+		logger.info("***************TestCasePractice Verify Sign out ends*****************"); 
 
 	}
 

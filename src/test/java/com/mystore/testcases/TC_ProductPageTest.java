@@ -26,7 +26,7 @@ public class TC_ProductPageTest  extends BaseClass  {
 	public void VerifySearchProduct() throws IOException
 	{
 		String searchKey = "T-shirts";
-		logger.info("\n***************TestCase Search Product started*****************"); 
+		logger.info("\n***************TestCasePractice Search Product started*****************"); 
 
 		//Sign in 
 		indexPage indexPg = new indexPage(driver);
@@ -72,7 +72,7 @@ public class TC_ProductPageTest  extends BaseClass  {
 
 		} 
 
-		logger.info("***************TestCase Search Product ends*****************"); 
+		logger.info("***************TestCasePractice Search Product ends*****************"); 
 
 	}
 
@@ -81,7 +81,7 @@ public class TC_ProductPageTest  extends BaseClass  {
 	public void VerifyBuyProduct() throws IOException
 	{
 
-		logger.info("\n***************TestCase Buy Product started*****************"); 
+		logger.info("\n***************TestCasePractice Buy Product started*****************"); 
 
 		/*	driver.get(url);
 		logger.info("Url opened");*/
@@ -180,7 +180,7 @@ public class TC_ProductPageTest  extends BaseClass  {
 
 		} 
 
-		logger.info("***************TestCase BuyProduct ends*****************"); 
+		logger.info("***************TestCasePractice BuyProduct ends*****************"); 
 
 	}
 
@@ -188,7 +188,7 @@ public class TC_ProductPageTest  extends BaseClass  {
 	@Test
 	public void verifyAddToWishlistWithoutLogin() throws IOException
 	{
-		logger.info("\n***************TestCase verifyAddToWishlistWithoutLogin started*****************"); 
+		logger.info("\n***************TestCasePractice verifyAddToWishlistWithoutLogin started*****************"); 
 
 		indexPage indexPage = new indexPage(driver);
 		indexPage.clickOnTShirtMenu();

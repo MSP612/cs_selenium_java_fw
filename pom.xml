@@ -14,7 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
-    	<maven.compiler.target>17</maven.compiler.target>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<build>
@@ -27,7 +27,7 @@
 					<configuration>
 						<!-- put your configurations here -->
 						<source>17</source>
-                		<target>17</target>
+						<target>17</target>
 					</configuration>
 				</plugin>
 
@@ -39,6 +39,9 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						<dependenciesToScan>
+							<dependency>org.testng:testng</dependency>
+						</dependenciesToScan>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -46,15 +49,9 @@
 	</build>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
-		<dependency>
-		    <groupId>org.junit.jupiter</groupId>
-		    <artifactId>junit-jupiter-api</artifactId>
-		    <version>[5.11.4,)</version>
-		    <scope>test</scope>
-		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -91,23 +88,25 @@
 			<version>[5.2.2,)</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
 			<version>[2.17.2,)</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
 			<version>[2.17.2,)</version>
 		</dependency>
 		<dependency>
-		    <groupId>io.github.bonigarcia</groupId>
-		    <artifactId>webdrivermanager</artifactId>
-		    <version>5.9.2</version>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.9.2</version>
 		</dependency>
 	</dependencies>
 </project>

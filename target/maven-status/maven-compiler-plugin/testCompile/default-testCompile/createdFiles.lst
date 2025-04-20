@@ -4,6 +4,7 @@ com\mystore\testcases\TC_ProductPageTest.class
 com\mystore\pageobject\OrderConfirmationPage.class
 com\mystore\testcases\BaseClass.class
 com\mystore\pageobject\indexPage.class
+com\mystore\testcases\TestCasePractice.class
 com\mystore\pageobject\SearchResultPage.class
 com\mystore\pageobject\accountCreationDetails.class
 com\mystore\pageobject\OrderAddressPage.class
@@ -17,4 +18,3 @@ com\mystore\testcases\TC_MyAccountPageTest.class
 com\mystore\pageobject\ProductPage.class
 com\mystore\pageobject\myAccountPage.class
 com\mystore\pageobject\OrderShippingPage.class
-com\mystore\testcases\test.class
