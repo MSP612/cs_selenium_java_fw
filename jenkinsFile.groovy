@@ -25,10 +25,8 @@ pipeline {
 
         stage('Post Actions') {
             steps {
-                // Publish test results from TestNG
-                junit '**/test-output/testng-results.xml'
                 // Archive ExtentReports (HTML, screenshots, etc.)
-                archiveArtifacts artifacts: '**/test-output/**/*.*', allowEmptyArchive: true   
+                archiveArtifacts artifacts: 'reports/*.html', allowEmptyArchive: true   
             }
         }
     }
