@@ -19,13 +19,13 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                sh 'mvn clean test'
+                sh 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
         }
 
         stage('Post Actions') {
             steps {
-                junit '**/target/surefire-reports/*.xml'
+                
             }
         }
     }
