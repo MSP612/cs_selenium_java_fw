@@ -5,7 +5,7 @@
 		<listener
 			class-name="com.mystore.utilities.ExtentListenerClass"></listener>
 	</listeners>
-	<test name="ChromeTest">
+	<test name="test">
         <parameter name="browser" value="chrome" />
         <classes>
             <class name="com.mystore.testcases.test" />
