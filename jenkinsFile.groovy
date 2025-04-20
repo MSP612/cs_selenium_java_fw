@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        GIT_REPO = 'https://github.com/your-username/selenium-grid-parallel.git'
+        GIT_REPO = 'https://github.com/MSP612/cs_selenium_java_fw'
     }
 
     stages {
