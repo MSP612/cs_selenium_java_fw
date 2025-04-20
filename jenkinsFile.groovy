@@ -26,7 +26,7 @@ pipeline {
         stage('Post Actions') {
             steps {
                 // Archive ExtentReports (HTML, screenshots, etc.)
-                archiveArtifacts artifacts: 'reports/*.html', allowEmptyArchive: true   
+                archiveArtifacts artifacts: 'Reports/*.html', allowEmptyArchive: true   
             }
         }
     }
